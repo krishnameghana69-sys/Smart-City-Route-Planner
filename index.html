@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart City Route Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    🚚 Smart City Delivery Route Planner (SSSP – Bellman-Ford)
+</div>
+
+<div class="container">
+
+    <div class="control-panel">
+        <h3>Route Selection</h3>
+        <p><b>Source:</b> Majestic</p>
+
+        <label>Select Destination</label>
+        <select id="destination"></select>
+
+        <button onclick="findRoute()">Find Optimal Route</button>
+
+        <div class="result-box">
+            <h4>Routing Result</h4>
+            <pre id="output">Select a destination to compute routes...</pre>
+        </div>
+    </div>
+
+    <div class="map-panel">
+        <h3>City Road Network</h3>
+        <svg id="map" width="1000" height="750"></svg>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
